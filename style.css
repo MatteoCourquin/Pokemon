@@ -15,6 +15,7 @@
 }
 
 body{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +35,8 @@ body{
 }
 
 .insert-pokemon{
-    width: fit-content;
+    width: 80%;
+    max-width: 400px;
     display: flex;
     margin: 20px auto 0 auto;
     padding: 20px;
@@ -68,6 +70,8 @@ body{
 }
 
 .input-pokemon, .btn-input-pokemon{
+    width: 80%;
+    max-width: 600px;
     font-size: 40px;
     font-family: 'Pokemon-Solid';
     cursor: pointer;
