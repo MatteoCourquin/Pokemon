@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Pokemon-Solid";
+    src: local("Pokemon-Regular"),
+    url(./assets/fonts/PokemonSolid.ttf) format("truetype");
+}
+
+:root{
+    --color-main: #ffcb05;
+    --color-second: #3c5aa6;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pokemon-Solid';
+    color: var(--color-second);
+    height: 100vh;
+    font-size: 40px;
+    /* background: var(--color-main);*/
+    background-image: url('./assets/images/logo-pokemon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-pokemon{
+    display: none;
+}
+
+.insert-pokemon{
+    width: fit-content;
+    display: flex;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    color: var(--color-second);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid var(--color-second);
+    border-radius: 10px;
+    background: var(--color-main);
+}
+.plus-moins-idPoke{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.plus-moins-idPoke button{
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--color-main);
+    background: var(--color-second);
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 40px;
+}
+
+.input-pokemon, .btn-input-pokemon{
+    font-size: 40px;
+    font-family: 'Pokemon-Solid';
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    color: var(--color-second);
+    background: var(--color-main);
+    border: 5px solid var(--color-second);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.btn-input-pokemon{
+    color: var(--color-main);
+    background: var(--color-second);
+    cursor: pointer;
+}
+.input-pokemon::placeholder{
+    color: var(--color-second);
+    opacity: .5;
+}
